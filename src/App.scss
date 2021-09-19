@@ -1,0 +1,117 @@
+@import "bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: Arigato;
+    src: url(./assets/Arigato-Regular.ttf);
+  }
+  @font-face {
+    font-family: BebasNeue;
+    src: url(./assets/BebasNeue.ttf);
+  }
+  .navbar-light .navbar-brand {
+    font-family: Arigato;
+    font-size: 2em;
+    color:#fff;
+    word-wrap: break-word;
+    width:100px;
+}
+
+.navbar{
+    background-color: #397367;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:#fff;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color:#5DA399;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#5DA399;
+}
+.movie-list-text{
+    font-family: BebasNeue;
+    font-weight: 600;
+    font-size:1rem;
+    letter-spacing: 0.1em;
+    padding: 1rem 0rem;
+    display:flex;
+    justify-content: center;
+    background-color: #fff;
+}
+.genre-list{
+    display:flex;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+.movie-list, .single-actor,.Actors-list-details {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    font-family: BebasNeue;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+.single-actor img{
+    padding:2rem;
+}
+.movie-preview{
+    margin: 1rem 1rem 1rem 3rem;
+    max-height: 320px;
+    max-width: 180px;
+    cursor: pointer;
+}
+.movie-preview img{
+    height: 300px;
+    width: 200px;
+}
+.genre{
+    margin: 1rem 1rem 0rem 0rem;
+    max-width: 130px;
+    cursor: pointer;
+    background-color:  #397367;
+    color:#fff;
+    padding: 1rem 6rem 0rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.genre h5{
+    font-family: BebasNeue;
+}
+.pagination-buttons{
+    display: flex;
+    justify-content: center;
+}
+.pagination-buttons a{
+    color:#397367;
+}
+.pagination-buttons a:hover{
+    color:#000;
+}
+.Movie-details{
+    background-color: #fff;
+}
+.Movie-details img{
+    padding:3rem;
+}
+.Actors-list-details{
+    font-family: BebasNeue;
+    background-color: #fff;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.Movie-details-text {
+    font-family: BebasNeue;
+}
+.Actor-details{
+    display:flex;
+    flex-direction: column;
+    padding:3rem;
+}
+// Medium devices (tablets, 768px and up to 1399px)
+@media (min-width: 768px) and (max-width: 1399px) { 
+    .movie-preview{
+        margin: 1rem 1rem 1rem 1rem;
+    }
+ }
